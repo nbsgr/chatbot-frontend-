@@ -1,0 +1,79 @@
+/* ===== Paragraphs ===== */
+.cgpt-paragraph {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+/* ===== Lists ===== */
+.cgpt-list {
+  padding-left: 18px;
+  margin: 6px 0;
+}
+
+/* ===== Inline Code ===== */
+.cgpt-inline-code {
+  background: #222;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: Consolas, monospace;
+}
+
+/* ===== Code Block Wrapper ===== */
+.cgpt-code-wrapper {
+  background: #0b0b0b;
+  border-radius: 10px;
+  margin: 12px 0;
+  overflow: hidden;
+  border: 1px solid #1f1f1f;
+}
+
+/* ===== Header ===== */
+.cgpt-code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #aaa;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.cgpt-code-lang {
+  text-transform: lowercase;
+  font-family: Consolas, monospace;
+}
+
+.cgpt-code-copy {
+  background: transparent;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.cgpt-code-copy:hover {
+  color: white;
+}
+
+/* ===== Code Block ===== */
+.cgpt-code-block {
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: "JetBrains Mono", Consolas, monospace;
+
+  white-space: pre;         /* PRESERVE INDENTATION */
+  tab-size: 2;             /* Proper tab spacing */
+  overflow-x: auto;        /* Horizontal scroll only if needed */
+  overflow-y: hidden;
+
+  max-width: 100%;
+}
+
+/* Prevent wrapping inside code */
+.cgpt-code-block code {
+  display: block;
+  white-space: pre;
+}
