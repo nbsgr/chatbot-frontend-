@@ -1,262 +1,201 @@
-# 🚀 AI-Powered Parametric Insurance for Gig Workers
+# 🤖 AI Chatbot Web App
 
-> A smart insurance platform that protects delivery partners from income loss caused by real-world disruptions like weather, pollution, and curfews.
-
----
-
-## 📌 Problem Statement
-
-India’s gig economy workers (Zomato, Swiggy, Amazon, Zepto, etc.) face unpredictable income loss due to external disruptions such as heavy rain, extreme heat, pollution, and sudden lockdowns.
-
-Currently, there is **no system that protects their daily earnings**, leaving them financially vulnerable.
-
-This project solves that by building an **AI-powered parametric insurance platform** that provides **automatic payouts based on real-world events**.
+A full-stack AI-powered chatbot application built using **React (Vite)** and **Spring Boot**, featuring authentication, protected routes, and real-time interaction.
 
 ---
 
-## 💡 Our Solution
+## 🚀 Live Demo
 
-We built a **parametric insurance system** that:
-
-* Uses **AI to calculate weekly premiums**
-* Detects **real-world disruptions automatically**
-* Triggers **zero-touch claims**
-* Provides **instant payout simulation**
-* Prevents fraud using intelligent validation
-
-👉 Focus: **Income protection (NOT health, vehicle, or life insurance)**
+🌐 Frontend: https://chatbot-frontend-green-phi.vercel.app/
 
 ---
 
-## 🧠 Key Features
+## 📌 Features
 
-### 🔹 AI-Powered Risk Assessment
-
-* Dynamic weekly premium calculation
-* Risk scoring based on:
-
-  * Location
-  * Weather patterns
-  * Historical disruption data
-
-### 🔹 Parametric Automation
-
-* Real-time monitoring of disruptions
-* Auto-triggered claims (no manual request)
-* Instant payout simulation
-
-### 🔹 Fraud Detection System
-
-* Duplicate claim prevention
-* Location validation (anti GPS spoofing)
-* Anomaly detection
-
-### 🔹 User Dashboard
-
-* Active policies
-* Earnings protected
-* Claims & payouts tracking
-
-### 🔹 Admin Dashboard
-
-* Risk analytics
-* Claim statistics
-* Fraud insights
+* 🔐 User Authentication (Login / Signup)
+* 📧 OTP Verification
+* 🔑 Forgot & Reset Password
+* 🧠 AI Chat Interface
+* 📊 Protected Dashboard
+* 🌍 Deployed Frontend (Vercel)
+* 🖥️ Desktop App (via Nativefier)
+* 📱 Mobile-ready (Capacitor / PWA ready)
 
 ---
 
-## 🏗️ System Architecture
-
-```plaintext
-Frontend (React)
-    ↓
-Spring Boot Backend (REST APIs)
-    ↓
-Microservices Layer
-   ├── Auth Service (JWT)
-   ├── Insurance Service
-   ├── Claims Service
-   ├── AI Service (Flask)
-    ↓
-Database (PostgreSQL/MySQL)
-    ↓
-External APIs (Weather, Traffic - Mock/Real)
-```
-
----
-
-## ⚙️ Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
-* React.js
-* HTML, CSS, JavaScript
+* React (Vite)
+* React Router
+* CSS
 
 ### Backend
 
-* Java
 * Spring Boot
-* Spring Security (JWT)
+* JWT Authentication
+* REST APIs
 
-### AI / ML
+### Deployment
 
-* Python
-* Flask
-* Scikit-learn
+* Vercel (Frontend)
+* (Backend deployment pending / configurable)
 
-### Database
+### Desktop
 
-* MySQL / PostgreSQL
-
-### DevOps & Tools
-
-* GitHub
-* Docker
-* Postman
+* Electron (via Nativefier)
 
 ---
 
-## 🔄 Workflow
+## 📂 Project Structure
 
-1. User registers and selects a **weekly insurance plan**
-2. System calculates premium using **AI risk scoring**
-3. External APIs monitor **disruption conditions**
-4. If disruption occurs:
-
-   * Claim is automatically triggered
-   * Fraud checks are applied
-   * Payout is processed instantly
-
----
-
-## 📊 Weekly Pricing Model
-
-* Pricing is designed based on:
-
-  * Risk level (low / medium / high)
-  * Location-based factors
-  * Historical disruption frequency
-
-👉 Example:
-
-* Low-risk zone → ₹30/week
-* Medium-risk zone → ₹50/week
-* High-risk zone → ₹80/week
-
----
-
-## 🚧 Challenges
-
-* Designing accurate **parametric triggers**
-* Building **zero-touch claim automation**
-* Simulating real-world **fraud scenarios**
-* Handling **limited real-time data APIs**
-* Balancing pricing with risk
-
----
-
-## 🏆 Achievements
-
-* Built a **fully automated insurance workflow**
-* Implemented **AI-driven pricing**
-* Designed **real-time claim triggering system**
-* Created **fraud detection logic**
-* Developed a **clean full-stack architecture**
-
----
-
-## 📚 Learnings
-
-* Real-world application of **AI in fintech/insurtech**
-* Designing **scalable backend systems**
-* Importance of **user-centric solutions**
-* Integrating multiple systems (AI + APIs + payments)
-
----
-
-## 🔮 Future Scope
-
-* Real-time API integration (weather, AQI, traffic)
-* Advanced ML models for prediction
-* Mobile application (Android/iOS)
-* Real payment gateway integration (UPI/Razorpay)
-* Expansion to other gig sectors
-
----
-
-## 🧑‍💻 Getting Started
-
-### Prerequisites
-
-* Node.js
-* Java (JDK 17+)
-* Python 3.x
-* MySQL/PostgreSQL
-
----
-
-### Installation
-
-#### 1. Clone Repository
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+```
+aibot/
+├── src/
+│   ├── pages/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+├── dist/
+├── vercel.json
+├── vite.config.js
+└── package.json
 ```
 
-#### 2. Backend Setup (Spring Boot)
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
 
 ```bash
-cd backend
-./mvnw spring-boot:run
+git clone https://github.com/your-username/chatbot-frontend.git
+cd chatbot-frontend
 ```
 
-#### 3. Frontend Setup (React)
+---
+
+### 2️⃣ Install Dependencies
 
 ```bash
-cd frontend
 npm install
+```
+
+---
+
+### 3️⃣ Run Development Server
+
+```bash
 npm run dev
 ```
 
-#### 4. AI Service (Flask)
+---
+
+### 4️⃣ Build for Production
 
 ```bash
-cd ml-service
-pip install -r requirements.txt
-python app.py
+npm run build
 ```
 
 ---
 
-## 📽️ Demo
+## 🌐 Deployment (Vercel)
 
-> Add your demo video link here
+This project is deployed using **Vercel**.
+
+### Important Config (`vercel.json`)
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
+👉 Required for React Router (SPA routing fix)
 
 ---
 
-## 📎 Project Structure
+## 🖥️ Desktop App (Nativefier)
 
-```plaintext
-root/
- ├── frontend/        # React App
- ├── backend/         # Spring Boot APIs
- ├── ml-service/      # AI Flask service
- ├── docs/            # Diagrams & assets
- └── README.md
+Convert deployed app into desktop app:
+
+```bash
+nativefier https://chatbot-frontend-green-phi.vercel.app \
+  --name "AI Bot" \
+  --icon icon.ico
 ```
 
 ---
 
-## 🤝 Contributors
+## 📱 Mobile App (Optional)
 
-* Your Name
-* Team Members
+### Option 1: PWA
+
+* Add to Home Screen (no install needed)
+
+### Option 2: Capacitor
+
+```bash
+npm install @capacitor/core @capacitor/cli
+npx cap init
+npm run build
+npx cap add android
+npx cap open android
+```
 
 ---
 
-## 📌 Final Note
+## 🔐 Authentication Flow
 
-This project demonstrates how **technology + AI can create financial safety nets for gig workers**, making the digital economy more inclusive and resilient.
+* User Signup → OTP Verification
+* Login → JWT Token stored
+* Protected Routes using `ProtectedRoute`
+* Dashboard accessible only after login
+
+---
+
+## ⚠️ Known Issues
+
+* Backend must be deployed for full functionality
+* CORS must include deployed frontend URL
+
+---
+
+## 🧠 Learnings
+
+* SPA routing issues in production (Vercel)
+* CORS configuration in Spring Boot
+* Desktop app packaging using Electron
+* Deployment workflows (Git → Vercel)
+
+---
+
+## 🚀 Future Improvements
+
+* Deploy backend (Render / Railway)
+* Add real-time chat (WebSockets)
+* Improve UI/UX
+* Add dark mode
+* Mobile optimization
+
+---
+
+## 👨‍💻 Author
+
+**Balu**
+B.Tech Student | Full Stack Developer
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!
 
 ---
