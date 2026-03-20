@@ -1,0 +1,262 @@
+# 🚀 AI-Powered Parametric Insurance for Gig Workers
+
+> A smart insurance platform that protects delivery partners from income loss caused by real-world disruptions like weather, pollution, and curfews.
+
+---
+
+## 📌 Problem Statement
+
+India’s gig economy workers (Zomato, Swiggy, Amazon, Zepto, etc.) face unpredictable income loss due to external disruptions such as heavy rain, extreme heat, pollution, and sudden lockdowns.
+
+Currently, there is **no system that protects their daily earnings**, leaving them financially vulnerable.
+
+This project solves that by building an **AI-powered parametric insurance platform** that provides **automatic payouts based on real-world events**.
+
+---
+
+## 💡 Our Solution
+
+We built a **parametric insurance system** that:
+
+* Uses **AI to calculate weekly premiums**
+* Detects **real-world disruptions automatically**
+* Triggers **zero-touch claims**
+* Provides **instant payout simulation**
+* Prevents fraud using intelligent validation
+
+👉 Focus: **Income protection (NOT health, vehicle, or life insurance)**
+
+---
+
+## 🧠 Key Features
+
+### 🔹 AI-Powered Risk Assessment
+
+* Dynamic weekly premium calculation
+* Risk scoring based on:
+
+  * Location
+  * Weather patterns
+  * Historical disruption data
+
+### 🔹 Parametric Automation
+
+* Real-time monitoring of disruptions
+* Auto-triggered claims (no manual request)
+* Instant payout simulation
+
+### 🔹 Fraud Detection System
+
+* Duplicate claim prevention
+* Location validation (anti GPS spoofing)
+* Anomaly detection
+
+### 🔹 User Dashboard
+
+* Active policies
+* Earnings protected
+* Claims & payouts tracking
+
+### 🔹 Admin Dashboard
+
+* Risk analytics
+* Claim statistics
+* Fraud insights
+
+---
+
+## 🏗️ System Architecture
+
+```plaintext
+Frontend (React)
+    ↓
+Spring Boot Backend (REST APIs)
+    ↓
+Microservices Layer
+   ├── Auth Service (JWT)
+   ├── Insurance Service
+   ├── Claims Service
+   ├── AI Service (Flask)
+    ↓
+Database (PostgreSQL/MySQL)
+    ↓
+External APIs (Weather, Traffic - Mock/Real)
+```
+
+---
+
+## ⚙️ Tech Stack
+
+### Frontend
+
+* React.js
+* HTML, CSS, JavaScript
+
+### Backend
+
+* Java
+* Spring Boot
+* Spring Security (JWT)
+
+### AI / ML
+
+* Python
+* Flask
+* Scikit-learn
+
+### Database
+
+* MySQL / PostgreSQL
+
+### DevOps & Tools
+
+* GitHub
+* Docker
+* Postman
+
+---
+
+## 🔄 Workflow
+
+1. User registers and selects a **weekly insurance plan**
+2. System calculates premium using **AI risk scoring**
+3. External APIs monitor **disruption conditions**
+4. If disruption occurs:
+
+   * Claim is automatically triggered
+   * Fraud checks are applied
+   * Payout is processed instantly
+
+---
+
+## 📊 Weekly Pricing Model
+
+* Pricing is designed based on:
+
+  * Risk level (low / medium / high)
+  * Location-based factors
+  * Historical disruption frequency
+
+👉 Example:
+
+* Low-risk zone → ₹30/week
+* Medium-risk zone → ₹50/week
+* High-risk zone → ₹80/week
+
+---
+
+## 🚧 Challenges
+
+* Designing accurate **parametric triggers**
+* Building **zero-touch claim automation**
+* Simulating real-world **fraud scenarios**
+* Handling **limited real-time data APIs**
+* Balancing pricing with risk
+
+---
+
+## 🏆 Achievements
+
+* Built a **fully automated insurance workflow**
+* Implemented **AI-driven pricing**
+* Designed **real-time claim triggering system**
+* Created **fraud detection logic**
+* Developed a **clean full-stack architecture**
+
+---
+
+## 📚 Learnings
+
+* Real-world application of **AI in fintech/insurtech**
+* Designing **scalable backend systems**
+* Importance of **user-centric solutions**
+* Integrating multiple systems (AI + APIs + payments)
+
+---
+
+## 🔮 Future Scope
+
+* Real-time API integration (weather, AQI, traffic)
+* Advanced ML models for prediction
+* Mobile application (Android/iOS)
+* Real payment gateway integration (UPI/Razorpay)
+* Expansion to other gig sectors
+
+---
+
+## 🧑‍💻 Getting Started
+
+### Prerequisites
+
+* Node.js
+* Java (JDK 17+)
+* Python 3.x
+* MySQL/PostgreSQL
+
+---
+
+### Installation
+
+#### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+
+#### 2. Backend Setup (Spring Boot)
+
+```bash
+cd backend
+./mvnw spring-boot:run
+```
+
+#### 3. Frontend Setup (React)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+#### 4. AI Service (Flask)
+
+```bash
+cd ml-service
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
+## 📽️ Demo
+
+> Add your demo video link here
+
+---
+
+## 📎 Project Structure
+
+```plaintext
+root/
+ ├── frontend/        # React App
+ ├── backend/         # Spring Boot APIs
+ ├── ml-service/      # AI Flask service
+ ├── docs/            # Diagrams & assets
+ └── README.md
+```
+
+---
+
+## 🤝 Contributors
+
+* Your Name
+* Team Members
+
+---
+
+## 📌 Final Note
+
+This project demonstrates how **technology + AI can create financial safety nets for gig workers**, making the digital economy more inclusive and resilient.
+
+---
